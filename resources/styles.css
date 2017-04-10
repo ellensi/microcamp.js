@@ -1,20 +1,26 @@
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/OpenSans-Regular.woff");
+    src: url("fonts/OpenSans.woff2");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/OpenSans-italic.woff");
+    src: url("fonts/OpenSans-Italic.woff2");
     font-style: italic;
-    font-weight: normal;
+    font-weight: 400;
 }
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/OpenSans-light.woff");
+    src: url("fonts/OpenSans-Light.woff2");
     font-style: normal;
-    font-weight: light;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-Semibold.woff2");
+    font-style: normal;
+    font-weight: 500;
 }
 
 body {
@@ -34,9 +40,14 @@ body {
 .ItemContainer {
     display: flex;
     flex-direction: row;
-    background-color: #666;
+    background-color: #555;
     padding: 10px;
     margin: 10px;
+    border-radius: 2px;
+}
+
+.ItemContainer:hover {
+    background-color: #666;
 }
 
 .ItemLeftPanel {
@@ -46,31 +57,51 @@ body {
 .ItemRightPanel {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .PackageIcon {
     width: 60px;
     height: 60px;
+    border-radius: 10px;
 }
 
 .PackageCaption {
     font-size: 18pt;
     margin-top: -4px;
-    font-weight: light;
+    font-weight: 300;
 }
 
 .PackageVersion {
-    font-size: 10pt;
+    font-size: 10.5pt;
     margin-left: 10px;
-    font-weight: normal;
+    font-weight: 400;
+    color: #aaa;
 }
 
 .PackageAuthor {
     font-size: 11pt;
+    padding-bottom: 3px;
     font-style: italic;
+    color: #aaa;
 }
 
 .PackageDescription {
-    padding-top: 5px;
     font-size: 11pt;
+    font-weight: 400;
+}
+
+.ExpanderRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ExpanderButton { 
+    font-size: 10pt;
+    color: #aaa;
+    text-align: right;
+    cursor: pointer;
+    padding-top: 3px;
+    text-transform: uppercase;
 }

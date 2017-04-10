@@ -1,9 +1,8 @@
 import * as React from "react";
+
 import { PackageItem } from "./PackageItem";
 
-export interface PackageListProps {
-    packages: any
-}
+export interface PackageListProps { packages: any }
 
 export class PackageList extends React.Component<PackageListProps, undefined> {
     render() {
