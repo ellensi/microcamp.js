@@ -32,12 +32,7 @@ body {
     padding: 0;
 }
 
-.MainCaption {
-    font-family: "Open Sans";
-    color: #0000ff;
-}
-
-.ItemContainer {
+.ItemContainer, .ItemContainerSelected {
     display: flex;
     flex-direction: row;
     background-color: #555;
@@ -46,8 +41,8 @@ body {
     border-radius: 2px;
 }
 
-.ItemContainer:hover {
-    background-color: #666;
+.ItemContainerSelected {
+    background-color: #777;
 }
 
 .ItemLeftPanel {
