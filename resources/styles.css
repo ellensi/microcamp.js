@@ -1,9 +1,76 @@
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/OpenSans-Regular.ttf") format ("truetype");
+    src: url("fonts/OpenSans-Regular.woff");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-italic.woff");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-light.woff");
+    font-style: normal;
+    font-weight: light;
+}
+
+body {
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: #fff;
+    background: black;
+    margin: 0;
+    padding: 0;
 }
 
 .MainCaption {
     font-family: "Open Sans";
     color: #0000ff;
+}
+
+.ItemContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #666;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ItemLeftPanel {
+    padding-right: 12px;
+}
+
+.ItemRightPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.PackageIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.PackageCaption {
+    font-size: 18pt;
+    margin-top: -4px;
+    font-weight: light;
+}
+
+.PackageVersion {
+    font-size: 10pt;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.PackageAuthor {
+    font-size: 11pt;
+    font-style: italic;
+}
+
+.PackageDescription {
+    padding-top: 5px;
+    font-size: 11pt;
 }
