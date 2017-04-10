@@ -1,9 +1,17 @@
 import * as React from "react";
+export interface HelloProps {
+    name: string
+}
 
-export class Hello extends React.Component<undefined, undefined> {
+export class Hello extends React.Component<HelloProps, undefined> {
     render() {
-        return <div className="MainCaption">Hello from React.js!</div>;
+        return <div className="MainCaption">Hello from { this.props.name }!</div>;
     }
 }
 
-// Note: render() always returns a single JSX element. If we need more, add child elements.
+// render() always returns a single JSX element. If we need more, add child elements.
+
+// React.Component<Property, State>
+
+// Props contain variables.
+// Optional parameter: name?: string
