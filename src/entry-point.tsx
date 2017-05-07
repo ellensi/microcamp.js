@@ -3,7 +3,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { PackageList } from "../components/PackageList";
+import { PackageList } from "./components/PackageList";
 
 // Download the locally hosted data type json file.
 fetch("/packages")

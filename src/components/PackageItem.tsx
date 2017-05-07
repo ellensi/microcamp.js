@@ -52,7 +52,7 @@ export class PackageItem extends React.Component<PackageItemProps, PackageItemSt
         return (
             <div className={ ItemContainerSelectedOrNot } onClick={ this.packageItemClicked } tabIndex={this.props.index}>
                 <div className="ItemLeftPanel">
-                    <img className="PackageIcon" src="/resources/icons/package.png" />
+                    <img className="PackageIcon" src="./src/resources/icons/package.png" />
                 </div>
                 <div className="ItemRightPanel">
                     <div className="PackageCaption">{ pkg.name }
